@@ -16,8 +16,6 @@ That’s why my calendar looks like a neatly-organized box of Legos, while my te
 
 **This is the only way they can be creative and do their job.**
 
-![A screenshot juxtaposes two calendars: on the left, a manager‘s busy schedule, packed with meetings from 7 am until 6 pm. On the right is a developer’s empty daily agenda.](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392888976/dJfgze6bef.png align="center")
-
 What does your calendar look like? [Let me know!](https://www.linkedin.com/posts/stephan-schulze_management-maker-manager-activity-6926800753080561664-GR4g)
 
 _By [Stephan Schulze](https://medium.com/@stephan.schulze), CTO@Project A_
