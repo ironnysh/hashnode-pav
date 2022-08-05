@@ -32,3 +32,5 @@ _By [Stephan Schulze](https://medium.com/@stephan.schulze), CTO@Project A_
 * Check out more stories on our [**Tech Insights blog**](https://insights.project-a.com/tech/home)
 
 * * *
+
+[The real cost of code debt](https://insights.project-a.com/the-real-cost-of-code-debt-18b64c8b27ae) was originally published in [Project A Insights](https://insights.project-a.com/) on Medium.
