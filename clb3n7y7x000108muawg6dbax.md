@@ -1,7 +1,5 @@
 # The sysadmin diaries
 
-![An article by Ronny Shani. Tech Content Writer at Project A — Berlin-based VC](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896435735/DuiK9HgnU.png align="left")
-
 Project A’s Tech team is the company’s biggest group of operational experts. It includes back- and front-end developers, consultants and program managers, DevOps, and a content writer (👋), but the second-largest crew is the Sysadmins: A bunch of IT professionals responsible for everyone’s digital well-being.
 
 The sysadmins handle all software and hardware installations, servers and infrastructure, networking, cybersecurity, compliance, and daily tasks related to running a hybrid workplace (Zoom Masters!).
