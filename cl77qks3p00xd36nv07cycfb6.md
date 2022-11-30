@@ -1,4 +1,4 @@
-## GitHub Copilot will (not) take your job
+# GitHub Copilot will (not) take your job
 
 How much would you pay to access public codebases from your IDE instead of spending hours sifting through Stack Overflow? What about the productivity boost you gain by never having to type the same code repeatedly? Would [you spend $0.27 a day](https://dev.to/seancassiere/continue-using-github-copilot-1hnp) to make your coding experience a little easier?
 
