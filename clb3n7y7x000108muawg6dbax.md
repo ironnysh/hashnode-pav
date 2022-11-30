@@ -1,8 +1,6 @@
 # The sysadmin diaries
 
-#### Emanuel Stoi, Senior System Administrator and Project A’s Mac Guy in residence, talks about automation, tech support, the challenges of a hybrid workplace, and the importance of the human factor
-
-![An article by Ronny Shani. Tech Content Writer at Project A — Berlin-based VC](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896435735/DuiK9HgnU.png)
+![An article by Ronny Shani. Tech Content Writer at Project A — Berlin-based VC](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896435735/DuiK9HgnU.png align="left")
 
 Project A’s Tech team is the company’s biggest group of operational experts. It includes back- and front-end developers, consultants and program managers, DevOps, and a content writer (👋), but the second-largest crew is the Sysadmins: A bunch of IT professionals responsible for everyone’s digital well-being.
 
@@ -10,7 +8,8 @@ The sysadmins handle all software and hardware installations, servers and infras
 
 “We have a very generalistic approach because it makes it easier to cover topics. When you get the workload we have, it makes sense to split responsibilities and ensure things get done even when some of us aren’t available”, says **Emanuel Stoi, Senior System Administrator**.
 
-![A portrait of Emanuel Stoi, a senior sysadmin at Project A](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896437125/imlPHdlEH.jpeg)
+![A portrait of Emanuel Stoi, a senior sysadmin at Project A](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896437125/imlPHdlEH.jpeg align="left")
+
 Emanuel Stoi. “I never imagined I’d have so much fun”
 
 “Of course, our team includes people who specialize in certain things, like Michael Raeder (IT Compliance Manager — RS), who’s more focused on compliance, data privacy, and these topics. Otherwise, it’s everything from first-level support to preparing computers for newcomers to the most complex things — like maintaining our server infrastructure or automation. That’s probably the most high-level task, where we code like everyone else on the Tech team.”
@@ -36,7 +35,8 @@ We have a virtual office day where we work together remotely and can spontaneous
 
 The ongoing work includes additional tasks: Maintenance, handling backlogs, and completing business-related assignments. “We have workshops where we align on bigger projects and a weekly call to discuss important projects or hot topics like tickets or ideas we need to plan. For example, I’m working on removing the admin rights of Mac users. I could create a super admin user and demote the normal users, but we want people to have the same user experience, so I’ve been building our own internal App Store using Jamf. Another feature automates system permissions, like screen sharing, so we don’t need to log in and use admin credentials.
 
-![A screenshot of Project A’s in-house App Store. The capture shows the whole UI, with several app icons and a navigation bar on the left](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896439055/fpWBhvqOE.png)
+![A screenshot of Project A’s in-house App Store. The capture shows the whole UI, with several app icons and a navigation bar on the left](https://cdn.hashnode.com/res/hashnode/image/upload/v1667896439055/fpWBhvqOE.png align="left")
+
 Emanuel’s App Store
 
 \*\*How do you balance compliance, corporate guidelines, and security with giving people a sense of autonomy over their devices?\*\*  
