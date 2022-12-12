@@ -1,4 +1,4 @@
-## Unleash your inner SRE
+# Unleash your inner SRE
 
 In a fascinating essay published on the latest edition of [GitHub’s The ReadME Project](https://github.com/readme/guides/ops-work-visible), Lorin Hochstein, a senior software engineer at Netflix, explained the streaming giant’s software operations model, dubbed _You build it, you run it_.
 
