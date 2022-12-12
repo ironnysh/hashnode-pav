@@ -1,4 +1,4 @@
-## Say goodbye to dependency hell, supply chain attacks, and performance issues
+# Say goodbye to dependency hell, supply chain attacks, and performance issues
 
 **_Contributing editor: [Juan Pablo Denis Otárola](https://www.linkedin.com/in/jpdeniso/)_**
 
