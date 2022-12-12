@@ -1,4 +1,4 @@
-## The mysterious case of the failing AWS Elastic Beanstalk instance
+# The mysterious case of the failing AWS Elastic Beanstalk instance
 
 ***Contributing editors: [Lucas Hild](https://www.linkedin.com/in/lucashild/), [Merlin Carter](https://www.linkedin.com/in/merlin-carter-bb303ab2/)***
 
