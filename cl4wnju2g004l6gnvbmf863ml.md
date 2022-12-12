@@ -1,4 +1,4 @@
-## The Court Says, Don’t Use Google Fonts
+# The Court Says, Don’t Use Google Fonts
 
 At the end of January this year, a regional court in Munich, Germany, ordered an unidentified website operator to pay a €100 fine for violating the plaintiff’s right to privacy by sharing their IP address with Google via the company’s Fonts API.
 
