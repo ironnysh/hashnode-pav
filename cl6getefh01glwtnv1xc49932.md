@@ -1,4 +1,4 @@
-## The real cost of code debt
+# The real cost of code debt
 
 ![Byte-size by Project A Tech Insights (A photo of an alarm clock on a colorful backdrop). Adapted from Icons8 Team@https://unsplash.com/photos/dhZtNlvNE8M](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392885941/I8nSowY1D.png)
 
