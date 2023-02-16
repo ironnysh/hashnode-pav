@@ -1,12 +1,12 @@
 # The mysterious case of the failing AWS Elastic Beanstalk instance
 
-***Contributing editors: [Lucas Hild](https://www.linkedin.com/in/lucashild/), [Merlin Carter](https://www.linkedin.com/in/merlin-carter-bb303ab2/)***
+***Contributing editors:*** [***Lucas Hild***](https://www.linkedin.com/in/lucashild/)***,*** [***Merlin Carter***](https://www.linkedin.com/in/merlin-carter-bb303ab2/)
 
 Our story begins in the early evening of December 5, 2021. Apart from the fact that two hippos at the Antwerp zoo in Belgium tested positive for Covid-19, nothing extraordinary happened that day.
 
 For us, it was anything but. That’s when we started experiencing sporadic high latencies on one of our AWS Elastic Beanstalk instances. Exciting, right?
 
-But let’s back up a bit and properly introduce ourselves. “We” is [**_Knowunity_**](https://knowunity.de/), Europe’s first E-learning platform, where students can view and download school materials: From summaries to presentations and flashcards for various subjects. The platform also functions as an online tutoring community, where people can interact in real-time, share content, and support each other. Since our launch in September 2020, **_Knowunity_** quickly became Germany’s leading education app and is now active in four countries — Germany, Switzerland, Austria, and France — serving around 2 million students.
+But let’s back up a bit and properly introduce ourselves. “We” is [***Knowunity***](https://knowunity.de/), Europe’s first E-learning platform, where students can view and download school materials: From summaries to presentations and flashcards for various subjects. The platform also functions as an online tutoring community, where people can interact in real-time, share content, and support each other. Since our launch in September 2020, ***Knowunity*** quickly became Germany’s leading education app and is now active in four countries — Germany, Switzerland, Austria, and France — serving around 2 million students.
 
 ### Go AWS
 
@@ -28,7 +28,8 @@ Restarting it doesn’t help either — it quickly relapses, indicating that
 
 Next, response time. 9 out of the 10 instances retain our average response time of 65–75 milliseconds. One lagged way behind, at 6 seconds on average, with AWS Session Manager indicating the application takes up around 90% of CPU compared with 10% CPU on other machines. This Eureka moment was short-lived: We inspected the metrics only to find that the total CPU usage of this instance shows nothing unusual.
 
-![Dashboard showing latency logs of multiple servers](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392924881/WmPAagCto.png)
+![Dashboard showing latency logs of multiple servers](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392924881/WmPAagCto.png align="left")
+
 *Average response time of the rest of the instances (2021–12–14)  
 Hiding the concerned machine to demonstrate others don’t experience high latency*
 
@@ -62,24 +63,28 @@ An even more important step was to restructure our monitoring and alerting proce
 
 We’re still using Prometheus, but we also import and merge the [data from CloudWatch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-monitoring-cpu-credits.html). Our current solution allows us to visualize the data on Grafana dashboards and set up rules via Alertmanager to ping us when something is wrong.
 
-![Dashboard showing Goroutines logs of multiple servers](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392926628/mft62GjG3.png)
+![Dashboard showing Goroutines logs of multiple servers](https://cdn.hashnode.com/res/hashnode/image/upload/v1655392926628/mft62GjG3.png align="left")
+
 *Goroutines on the other instances (2021–01–10)*
 
 One of the frustrating discoveries was that AWS leaves a lot to be desired in terms of observability. We probably should have [set this up early](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html), but we were disappointed to learn that AWS doesn’t notify you out of the box if you’ve used up all your credits.
 
 ### Happy ending
 
-Almost three months later, and with record traffic after **_Knowunity_** launched in France, we’re pretty satisfied with the performance. We encountered no issues since we upgraded our instance type. We continue to monitor the CPU Credits, and it seems that we found a suitable balance.
+Almost three months later, and with record traffic after ***Knowunity*** launched in France, we’re pretty satisfied with the performance. We encountered no issues since we upgraded our instance type. We continue to monitor the CPU Credits, and it seems that we found a suitable balance.
 
 Our main takeaway is to focus on monitoring and observability, which are critical. We also learned that combining several metrics from multiple sources provides a complete picture of our system’s behavior and performance, allowing us to prevent problems proactively.
 
 ### Epilogue
 
-AWS EC2’s Burstable instances offer an incredible advantage for apps like **_Knowunity_** that experience traffic spikes during particular time frames. Here’s a typical scenario:
+AWS EC2’s Burstable instances offer an incredible advantage for apps like ***Knowunity*** that experience traffic spikes during particular time frames. Here’s a typical scenario:
 
-*   Traffic jumps between 9:40 and 10:00 when most schools in Germany have a longer break.
-*   The next spike is after lunch — when school ends for lower grades.
-*   Finally, at around 17:00, as older students log in, the system reaches peak traffic, which remains persistent until people log out at 22:00.
+* Traffic jumps between 9:40 and 10:00 when most schools in Germany have a longer break.
+    
+* The next spike is after lunch — when school ends for lower grades.
+    
+* Finally, at around 17:00, as older students log in, the system reaches peak traffic, which remains persistent until people log out at 22:00.
+    
 
 All 10 instances run during these peak times to ensure maximum capacity.
 
@@ -89,23 +94,21 @@ Many things can go wrong when you run out of CPU Credits — we’ve seen it
 
 As Amazon explains, “EC2 burstable performance instances provide a baseline level of CPU utilization” that can grow on demand. Both variables are controlled by CPU Credits that you earn or spend depending on the instance’s CPU usage. The formula is simple:
 
-*   Each burstable instance continuously **earns** credits when it stays **below** the CPU baseline;
-*   and **spends** credits when it bursts **above** the baseline.
+* Each burstable instance continuously **earns** credits when it stays **below** the CPU baseline;
+    
+* and **spends** credits when it bursts **above** the baseline.
+    
 
 In other words, you don’t buy CPU Credits — you gain them over time.
 
-Before they optimized their setup, **_Knowunity_**‘s baseline was set at 10%, meaning they lost credit whenever the system used more than 10% of the CPU and gained credits whenever it used less.
+Before they optimized their setup, ***Knowunity***‘s baseline was set at 10%, meaning they lost credit whenever the system used more than 10% of the CPU and gained credits whenever it used less.
 
 However, their actual CPU usage was ~30%, so the problem went away once they adapted the baseline and set the correct instance type.
 
-***
+---
 
 **Have you ever experienced similar issues? What turned out to be the root cause? Which insights helped you future-proof your setup? We’d like to hear!**
 
-***
-#### Did you enjoy this story?
+---
 
-- Check out more stories on our [Tech Insights blog](https://insights.project-a.com/tech/home)
-***
-
-[Using AWS EC2 Elastic Beanstalk? Give Yourself Some Credit](https://insights.project-a.com/using-aws-ec2-elastic-beanstalk-give-yourself-some-credit-592c15acfc87) was originally published in [Project A Insights](https://insights.project-a.com) on Medium.
+[Using AWS EC2 Elastic Beanstalk? Give Yourself Some Credit](https://insights.project-a.com/using-aws-ec2-elastic-beanstalk-give-yourself-some-credit-592c15acfc87) was originally published on [Project A Insights](https://insights.project-a.com).
