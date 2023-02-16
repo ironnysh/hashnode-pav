@@ -135,4 +135,4 @@ Offering examples that showcase an elaborate setup is outside the scope of this 
 
 ---
 
-Unleash your inner SRE was originally published on [Project A Insights](https://insights.project-a.com/).
+[Unleash your inner SRE](https://insights.project-a.com/let-developers-deploy-to-production/) was originally published on [Project A Insights](https://insights.project-a.com/).
