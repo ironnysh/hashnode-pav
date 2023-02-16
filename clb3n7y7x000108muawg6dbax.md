@@ -57,6 +57,6 @@ Speaking of scripting, Emanuel also manages Project A’s custom WordPress-power
 
 “After getting my master’s in Applied IT, I had a small business helping people with their computers. Meanwhile, I learned Java and JavaScript and planned to become a front-end developer. I applied to the sysadmin job because I thought it could be easy until I found a job as a developer. I never imagined I’d have so much fun because I get to experiment with many things: Testing new OS versions, figuring out solutions for problems, running multiple Docker containers, and comparing them to see which works best. I even get to play with a lot of toys, test devices and fix smartphones. It’s fun. Even when it sometimes feels like grinding work, in 99% of the cases, you still feel that there’s a positive result, and it’s more than great in the working environment”.
 
-* * *
+---
 
-[The sysadmin diaries](https://insights.project-a.com/the-sysadmin-diaries-emanuel-stoi-b3b6620a9ea) was originally published in [Project A Insights](https://insights.project-a.com) on Medium.
+[The sysadmin diaries](https://insights.project-a.com/the-sysadmin-diaries-emanuel-stoi-b3b6620a9ea) was originally published on [Project A Insights](https://insights.project-a.com).
